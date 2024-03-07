@@ -2,13 +2,17 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+:root{
+    --accent: #00f7ff;
+}
+
 @font-face {
     font-family: GT America Extended;
     src: url('assets/GT-America-Extended.woff2') format('woff2');
 }
 
 ::selection {
-    background-color: #e21a41;
+    background-color: var(--accent);
     color: #fff;
 }
 
@@ -24,7 +28,7 @@ a {
 
 .selectedpage {
     cursor: default;
-    color: #e21a41;
+    color: var(--accent);
     user-select: none;
 }
 
@@ -47,7 +51,7 @@ a {
 }
 
 .navbar a:hover {
-    box-shadow: 0 5px #e21a41;
+    box-shadow: 0 5px var(--accent);
     transition: 0.2s;
 }
 
