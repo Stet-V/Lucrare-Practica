@@ -2,7 +2,7 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-:root{
+:root {
     --accent: #1563b8;
     --primary: #fff;
     --secondary: #161618;
@@ -11,7 +11,7 @@ html {
 
 @font-face {
     font-family: 'GT America Extended';
-    src: url('assets/GT-America-Extended-light.woff2') format('woff2');
+    src: url('assets/GT-America-Standard.woff2') format('woff2');
 }
 
 @font-face {
