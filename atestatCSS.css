@@ -3,23 +3,38 @@ html {
 }
 
 :root{
-    --accent: #00f7ff;
+    --accent: #1563b8;
+    --primary: #fff;
+    --secondary: #161618;
+    --tertiary: #414143;
 }
 
 @font-face {
-    font-family: GT America Extended;
+    font-family: 'GT America Extended';
+    src: url('assets/GT-America-Extended-light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'GT America Extended B';
     src: url('assets/GT-America-Extended.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Sectra';
+    src: url('assets/Sectra.woff2') format('woff2');
 }
 
 ::selection {
     background-color: var(--accent);
-    color: #fff;
+    color: var(--primary);
 }
 
 body {
+    background: var(--primary);
+    background-position: 50%;
     color: #000;
-    font-family: 'GT America Extended';
-    margin: 0px;
+    font: 100% / 1.45 'GT America Extended';
+    margin: 0;
 }
 
 a {
@@ -32,22 +47,26 @@ a {
     user-select: none;
 }
 
+
 .navbar {
-    color: #fff;
+    font-weight: 900;
+    font-family: 'GT America Extended B';
+    color: var(--primary);
     position: fixed;
     z-index: 999;
     width: 100%;
     top: 0;
     padding: 10px 1rem 10px 1rem;
-    background: #161618;
-    border-bottom: 1px solid #414143;
-    height: 6rem;
+    background: var(--secondary);
+    border-bottom: 1px solid var(--tertiary);
+    height: 7rem;
     box-sizing: border-box;
+    font-size: 1rem;
+    overflow: hidden;
 }
 
 .navbar a {
     text-decoration: none;
-    white-space: nowrap;
 }
 
 .navbar a:hover {
@@ -70,8 +89,31 @@ a {
     padding-right: 20px;
 }
 
-.hidden {
-    display: none;
+.header {
+    display: flex;
+    float: left;
+    align-items: center;
+    height: 100%;
 }
 
+.title {
+    text-transform: uppercase;
+    padding: 0px 10px 0px 10px;
+    font-size: 1.5rem;
+    user-select: none;
+}
 
+.summary {
+    margin: 8rem 0 0 0;
+    padding: 0px 8px 0px 8px;
+}
+
+.main {
+    border-top: 1px solid var(--tertiary);
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+}
