@@ -34,7 +34,7 @@ body {
     color: #000;
     font: 100% / 1.45 'GT America Extended';
     margin: 0;
-    background: linear-gradient(90deg, transparent, transparent 20%, var(--tertiary) calc(20% + 2.5px), transparent calc(20% + 2.5px));
+    background: linear-gradient(90deg, transparent, transparent 17.5%, var(--tertiary) calc(17.5% + 2.5px), transparent calc(17.5% + 2.5px));
 }
 
 a {
@@ -130,12 +130,12 @@ a {
 }
 
 .main {
-    margin: 2rem 7rem 2rem calc(20% + 2rem);
+    margin: 2rem 7rem 2rem calc(17.5% + 2rem);
     padding: 0px;
 }
 
 .main h2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
 }
 
 p {
@@ -165,4 +165,8 @@ h2, h3 {
 h3 {
     font-size: 1.75rem;
     text-decoration: underline;
+}
+
+b {
+    font-family: 'GT America Extended B';
 }
