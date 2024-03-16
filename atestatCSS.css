@@ -45,9 +45,6 @@ a {
     cursor: default;
     color: var(--accent);
     user-select: none;
-}
-
-.noboxshadow {
     box-shadow: none !important;
 }
 
