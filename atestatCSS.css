@@ -30,11 +30,11 @@ html {
 }
 
 body {
-    background: var(--primary);
-    background-position: 50%;
+    height: 100%;
     color: #000;
     font: 100% / 1.45 'GT America Extended';
     margin: 0;
+    background: linear-gradient(90deg, transparent, transparent 20%, var(--tertiary) calc(20% + 2.5px), transparent calc(20% + 2.5px));
 }
 
 a {
@@ -47,6 +47,9 @@ a {
     user-select: none;
 }
 
+.noboxshadow {
+    box-shadow: none !important;
+}
 
 .navbar {
     font-weight: 900;
@@ -58,7 +61,7 @@ a {
     top: 0;
     padding: 10px 1rem 10px 1rem;
     background: var(--secondary);
-    border-bottom: 1px solid var(--tertiary);
+    border-bottom: 2px solid var(--tertiary);
     height: 7rem;
     box-sizing: border-box;
     font-size: 1rem;
@@ -100,20 +103,66 @@ a {
     text-transform: uppercase;
     padding: 0px 10px 0px 10px;
     font-size: 1.5rem;
+}
+
+.unselectable {
     user-select: none;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
+.font-spectra {
+    font-family: 'Sectra';
+}
+
 .summary {
-    margin: 8rem 0 0 0;
-    padding: 0px 8px 0px 8px;
+    color: var(--primary);
+    padding: 12rem 5rem 6rem 5rem;
+    background: url(assets/background.png);
+    background-color: var(--secondary);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 75% calc(100% - 7rem);
+    font-family: 'GT America Extended B';
+    border-bottom: 2px solid var(--tertiary);
 }
 
 .main {
-    border-top: 1px solid var(--tertiary);
-    box-sizing: border-box;
+    margin: 2rem 7rem 2rem calc(20% + 2rem);
+    padding: 0px;
+}
+
+.main h2 {
+    font-size: 2.5rem;
 }
 
 p {
     font-size: 16px;
     line-height: 24px;
+}
+
+.summary p, .summary h1, .summary h2 {
+    margin: 0;
+}
+
+.summary h1 {
+    font-size: 2.75rem;
+}
+
+.titlechild {
+    color: var(--accent);
+}
+
+h2, h3 {
+    font-family: Sectra;
+    line-height: 42px;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    text-decoration: underline;
 }
