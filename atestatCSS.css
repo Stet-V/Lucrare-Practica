@@ -167,3 +167,22 @@ h3 {
 b {
     font-family: 'GT America Extended B';
 }
+
+.footer {
+    color: var(--primary);
+    /*background: linear-gradient(90deg, transparent, transparent 17.5%, var(--tertiary) calc(17.5% + 2.5px), transparent calc(17.5% + 2.5px), transparent, transparent 82.5%, var(--tertiary) calc(82.5% + 2.5px), transparent calc(82.5% + 2.5px))*/
+    border-top: 2px solid var(--tertiary);
+    background-color: var(--secondary);
+    padding: 1rem 2rem 1rem 2rem;
+    text-align: center;
+}
+
+.footer a {
+    background: linear-gradient(90deg, var(--accent) 50%, transparent 0) right bottom / 220% 100%;
+}
+
+.footer a:not(.selectedpage):hover {
+    background-position: 0 100%;
+    transition: background-position .4s cubic-bezier(.5, .15, .5, .85), text-decoration .2s cubic-bezier(.5, .15, .5, .85) .2s, color .2s cubic-bezier(.5, .15, .5, .85) .2s;
+    text-decoration: none;
+}
