@@ -180,13 +180,13 @@ b {
     background: var(--secondary);
     position: sticky;
     z-index: 1;
-    top: 12rem;
+    top: 10rem;
     float: left;
     width: 11.5%;
     padding: 1rem 1rem 1.5rem 2rem;
     margin-left: 9%;
     border: 2px solid var(--accent);
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 #sidebar a {
