@@ -183,13 +183,14 @@ b {
     top: 10rem;
     float: left;
     width: 11.5%;
-    padding: 1rem 1rem 1.5rem 2rem;
+    padding: 0.85rem 0.85rem 1.35rem 1.85rem;
     margin-left: 9%;
     border: 2px solid var(--accent);
     margin-top: 3rem;
 }
 
 #sidebar a {
+    padding: 0.15rem 0.15rem 0.15rem 0.15rem;
     background: linear-gradient(90deg, var(--accent) 50%, transparent 0) right -0.05rem bottom / 220% 100%;
     transition: background-position .3s cubic-bezier(.5, .15, .5, .85);
 }
