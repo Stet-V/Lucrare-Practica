@@ -45,7 +45,6 @@ a {
 .selectedpage {
     cursor: default;
     color: var(--accent);
-    user-select: none;
     box-shadow: none !important;
 }
 
@@ -167,14 +166,6 @@ b {
     font-family: 'GT America Extended B';
 }
 
-.footer {
-    color: var(--primary);
-    border-top: 2px solid var(--tertiary);
-    background-color: var(--secondary);
-    padding: 1rem 2rem 1rem 2rem;
-    text-align: center;
-}
-
 #sidebar {
     height: auto;
     background: var(--secondary);
@@ -182,14 +173,15 @@ b {
     z-index: 1;
     top: 10rem;
     float: left;
-    width: 11.5%;
+    width: 13.5%;
     padding: 0.85rem 0.85rem 1.35rem 1.85rem;
-    margin-left: 9%;
+    margin-left: 8%;
     border: 2px solid var(--accent);
     margin-top: 3rem;
 }
 
 #sidebar a {
+    cursor: pointer;
     padding: 0.15rem 0.15rem 0.15rem 0.15rem;
     background: linear-gradient(90deg, var(--accent) 50%, transparent 0) right -0.05rem bottom / 220% 100%;
     transition: background-position .3s cubic-bezier(.5, .15, .5, .85);
@@ -198,6 +190,16 @@ b {
 #sidebar a:hover {
     background-position: 0 100%;
     transition: background-position .3s cubic-bezier(.5, .15, .5, .85);
+}
+
+.sidebarbuttons:hover::after {
+    position: absolute;
+    border: .05rem solid var(--accent);
+    content: "";
+    height: 0;
+    right: 0;
+    width: 1.5rem;
+    margin-top: 0.65rem;
 }
 
 .sidebarbuttons {
