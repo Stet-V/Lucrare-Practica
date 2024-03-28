@@ -208,3 +208,11 @@ b {
     display: block;
     padding-top: 0.75rem;
 }
+
+.footer {
+    color: var(--primary);
+    border-top: 2px solid var(--tertiary);
+    background-color: var(--secondary);
+    padding: 0.5rem 0 0.5rem 0;
+    text-align: center;
+}
