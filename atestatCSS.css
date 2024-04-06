@@ -32,7 +32,6 @@ html {
 body {
     font: 100% / 1.45 'GT America Extended';
     margin: 0;
-    background: linear-gradient(90deg, transparent, transparent 25%, var(--tertiary) calc(25% + 2.5px), transparent calc(25% + 2.5px));
 }
 
 a {
@@ -122,8 +121,9 @@ a {
 }
 
 .main {
-    margin: 2rem 7rem 2rem calc(25% + 2rem);
-    padding: 0px;
+    margin: 0 7rem 0 25%;
+    padding: 1rem 0 2rem 2rem;
+    border-left: 2px solid var(--tertiary);
 }
 
 .main h2 {
