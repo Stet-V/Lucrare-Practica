@@ -198,7 +198,7 @@ b {
     font-family: 'GT America Extended B';
     color: var(--primary);
     display: block;
-    padding-top: 0.75rem;
+    padding-top: 1rem;
 }
 
 .footer {
